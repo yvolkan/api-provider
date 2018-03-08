@@ -3,13 +3,12 @@
     "description": "The Api Provider",
     "keywords": ["laravel", "api"],
     "license": "MIT",
-    "type": "composer-plugin",
     "require": {
         "php": ">=5.5.0"
     },
     "autoload": {
         "psr-4": {
-            "yvolkan\\ApiProvider\\": "src"
+            "yvolkan\\ApiProvider\\": "src/"
         }
     },
     "authors": [
