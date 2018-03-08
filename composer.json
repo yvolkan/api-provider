@@ -1,0 +1,22 @@
+{
+    "name": "yvolkan/apiprovider",
+    "description": "The Api Provider",
+    "keywords": ["laravel", "api"],
+    "license": "MIT",
+    "type": "composer-plugin",
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "yvolkan\\ApiProvider\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Volkan YILMAZ",
+            "email": "volkyilmaz@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
