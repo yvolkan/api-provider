@@ -4,7 +4,8 @@
     "keywords": ["laravel", "api"],
     "license": "MIT",
     "require": {
-        "php": ">=5.5.0"
+        "php": ">=5.5.0",
+        "illuminate/support": "5.*"
     },
     "autoload": {
         "psr-4": {
@@ -17,5 +18,5 @@
             "email": "volkyilmaz@hotmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

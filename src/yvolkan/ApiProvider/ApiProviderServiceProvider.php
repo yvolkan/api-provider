@@ -23,7 +23,7 @@ class ApiProviderServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Api::class, function () {
+        $this->app->singleton(ApiProvider::class, function () {
             return new ApiProvider();
         });
 
