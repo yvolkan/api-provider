@@ -4,7 +4,7 @@ namespace yvolkan\ApiProvider\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class ApiProviderFacade extends Facade
+class ApiProvider extends Facade
 {
 	/**
 	 * Get the registered name of the component.
