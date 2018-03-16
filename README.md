@@ -19,13 +19,13 @@ composer require yvolkan/apiprovider
 Now open up `/config/app.php` and add the service provider to your `providers` array.
 ```php
 'providers' => [
-	yvolkan\ApiProvider\ApiProviderServiceProvider::class,
+	YVolkan\ApiProvider\ApiProviderServiceProvider::class,
 ]
 ```
 
 Now add the alias.
 ```php
 'aliases' => [
-	'ApiProvider' => yvolkan\ApiProvider\Facades\ApiProvider::class,
+	'ApiProvider' => YVolkan\ApiProvider\Facades\ApiProvider::class,
 ]
 ```

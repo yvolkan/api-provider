@@ -1,6 +1,6 @@
 <?php
 
-namespace yvolkan\ApiProvider;
+namespace YVolkan\ApiProvider;
 
 class ApiProvider
 {

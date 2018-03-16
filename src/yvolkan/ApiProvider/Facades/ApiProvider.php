@@ -1,6 +1,6 @@
 <?php
 
-namespace yvolkan\ApiProvider\Facades;
+namespace YVolkan\ApiProvider\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
