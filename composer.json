@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "yvolkan\\ApiProvider\\": "src/"
+            "YVolkan\\ApiProvider\\": "src/"
         }
     },
     "authors": [
