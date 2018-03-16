@@ -18,5 +18,12 @@
             "email": "volkyilmaz@hotmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "yvolkan\\ApiProvider\\ApiProviderServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable"
 }
