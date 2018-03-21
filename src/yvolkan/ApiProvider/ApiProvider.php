@@ -56,7 +56,7 @@ class ApiProvider
 
     public function __construct($config = null)
     {
-		if ($config instanceof Config) {
+        if ($config instanceof Config) {
             if ($config->has('apiProvider::config')) {
                 $this->config = $config->get('apiProvider::config');
             } elseif ($config->get('apiProvider')) {
