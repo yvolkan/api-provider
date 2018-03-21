@@ -55,7 +55,7 @@ class ApiProvider
     public $status;
 
     public function __construct($config = null)
-	{
+    {
 		if ($config instanceof Config) {
             if ($config->has('apiProvider::config')) {
                 $this->config = $config->get('apiProvider::config');
@@ -97,7 +97,7 @@ class ApiProvider
      * @return Response
      */
     public function query($name, $requestMethod = 'GET', $parameters = [], $headers = [])
-	{
+    {
         $url = $this->config['API_URL'].'/'.$this->config['API_VERSION'].'/'.$name;
 
         $headers = array_merge($this->header, $headers);
@@ -109,11 +109,11 @@ class ApiProvider
 
         if ($this->getStatusCode() && ($this->getStatusCode() < 200 || $this->getStatusCode() > 206)) {
             $this->setStatus(false);
-		} else {
+        } else {
             $this->setStatus(true);
         }
 
-		return $this->getResponse();
+        return $this->getResponse();
     }
 
     /**
@@ -123,9 +123,9 @@ class ApiProvider
      * @param array $parameters
      * @return void
      */
-	public function get($name, $parameters = [], $headers = [])
-	{
-		return $this->query($name, 'GET', $parameters, $headers);
+    public function get($name, $parameters = [], $headers = [])
+    {
+        return $this->query($name, 'GET', $parameters, $headers);
     }
 
     /**
@@ -135,9 +135,9 @@ class ApiProvider
      * @param array $parameters
      * @return void
      */
-	public function post($name, $parameters = [], $headers = [])
-	{
-		return $this->query($name, 'POST', $parameters, $headers);
+    public function post($name, $parameters = [], $headers = [])
+    {
+        return $this->query($name, 'POST', $parameters, $headers);
     }
 
     /**
@@ -148,8 +148,8 @@ class ApiProvider
      * @return void
      */
     public function delete($name, $parameters = [])
-	{
-		return $this->query($name, 'DELETE', $parameters);
+    {
+        return $this->query($name, 'DELETE', $parameters);
     }
 
     /**
@@ -160,8 +160,8 @@ class ApiProvider
      * @return void
      */
     public function put($name, $parameters = [])
-	{
-		return $this->query($name, 'PUT', $parameters);
+    {
+        return $this->query($name, 'PUT', $parameters);
     }
 
     /**
